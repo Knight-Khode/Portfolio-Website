@@ -4,9 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/index.css">
     <title>Elmir | Portfolio</title>
 </head>
 <body>
-    
+    <header id="header">
+        <div class="overlay">
+            <nav id="navbar">
+                <div class="container1 nav-content">
+                    <h1>
+                        <a href="index.html">Elmir</a>    
+                    </h1>
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#home" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#home" class="nav-link">What I Do</a></li>
+                        <li class="nav-item"><a href="#home" class="nav-link">Resume</a></li>
+                        <li class="nav-item"><a href="#home" class="nav-link">Portfolio</a></li>
+                        <li class="nav-item"><a href="#home" class="nav-link">Client</a></li>
+                        <li class="nav-item"><a href="#home" class="nav-link">Contact</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <div id="icons">
+                        <a href="https://twitter.com/ElmirMohammed11" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://github.com/Knight-Khode" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/elmir-mohammed-82b9201b7/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div>
+                <div class="container2 content2">
+                    <h1>
+                        Welcome
+                    </h1>
+                    <h1 id="typed"></h1>
+                    <P>Based In Accra Ghana</P>
+                    <a href="#contact">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/ea129587c4.js" crossorigin="anonymous"></script>
+    <script>
+        var options = {
+            strings: ['I Am Mohammed Elmir','I Am A Web Devoloper'],
+            typeSpeed: 40
+        };
+
+        var typed = new Typed('#typed', options);
+
+        // hamburger
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+    </script>
 </body>
 </html>

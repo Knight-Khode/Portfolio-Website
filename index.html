@@ -56,33 +56,6 @@
     </header>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://kit.fontawesome.com/ea129587c4.js" crossorigin="anonymous"></script>
-    <script>
-        var options = {
-            strings: ['I Am Mohammed Elmir','I Am A Web Devoloper'],
-            typeSpeed: 40
-        };
-
-        var typed = new Typed('#typed', options);
-
-        // hamburger
-        const hamburger = document.querySelector(".hamburger");
-        const navMenu = document.querySelector(".nav-menu");
-
-        hamburger.addEventListener("click", mobileMenu);
-
-        function mobileMenu() {
-            hamburger.classList.toggle("active");
-            navMenu.classList.toggle("active");
-        }
-
-        const navLink = document.querySelectorAll(".nav-link");
-
-        navLink.forEach(n => n.addEventListener("click", closeMenu));
-
-        function closeMenu() {
-            hamburger.classList.remove("active");
-            navMenu.classList.remove("active");
-        }
-    </script>
+    <script src="js/index.js"></script>
 </body>
 </html>

@@ -555,6 +555,102 @@ a{
     border-radius: 50%;
 }
 
+/*Contact*/
+#contact{
+    margin-top: 90px;
+    background-color: #f8f8f8;
+}
+
+#contact .contact-title{
+    text-align: center;
+}
+
+#contact .contact-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #4d4d4d;
+}
+
+#contact .contact-content .details{
+    margin-bottom: 30px;
+}
+
+#contact .contact-content #follow a{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#contact .contact-content #follow a i{
+    font-size: 20px;
+}
+
+#contact .contact-content #follow a .fa-twitter{
+    color: #046df7;
+}
+
+#contact .contact-content #follow a .fa-github{
+    color: #1f9c45;
+}
+
+#contact .contact-content #follow a .fa-linkedin-in{
+    color: #2057a0;
+}
+
+#contact .contact-content h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#contact .contact-content ul li{
+    display: flex;
+    align-items: center;
+}
+
+#contact .contact-content ul li i{
+    margin-right: 20px;
+}
+
+#contact .contact-content form{
+    width: 700px;
+    margin-bottom: 30px;
+}
+
+#contact .contact-content form .form-group{
+    margin-bottom: 20px;
+}
+
+#contact .contact-content form .form-group input[type="text"]{
+    margin-right: 50px;
+}
+
+#contact .contact-content form .form-group input[type="text"],
+#contact .contact-content form .form-group input[type="email"]
+{
+    width: 300px;
+    padding: 10px 10px;
+}
+
+#contact .contact-content form .form-group textarea{
+    width: 654px;
+}
+
+#contact .contact-content form .form-group input[type="submit"]{
+    position: relative;
+    left: 250px;
+    color: #fff;
+    background-color: #1f9c45;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 30px;
+    transition: all ease-in-out 0.5s;
+}
+
+#contact .contact-content form .form-group input[type="submit"]:hover{
+    background-color: #06ee4c;
+    cursor:pointer;
+}
+
 @media only screen and (max-width: 1200px) {
     #about .about-content .about-left {
         width: 600px;
@@ -562,6 +658,14 @@ a{
 
     #work .line{
         left: 46%;
+    }
+
+    #contact .contact-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #4d4d4d;
+        flex-direction: column-reverse;
     }
 } 
 
@@ -639,6 +743,30 @@ a{
     }
 
 } 
+
+@media only screen and (max-width: 940px){
+    #contact .contact-content form{
+        width: 600px;
+        margin-bottom: 30px;
+    }
+
+    #contact .contact-content form .form-group input[type="text"],
+    #contact .contact-content form .form-group input[type="email"]
+    {
+        width: 250px;
+        padding: 10px 10px;
+    }
+
+    #contact .contact-content form .form-group textarea{
+        width: 550px;
+    }
+
+    #contact .contact-content form .form-group input[type="submit"]{
+        left: 200px;
+    }
+}
+
+
 
 @media only screen and (max-width: 860px) {
     #about .about-content .about-left {
@@ -792,6 +920,27 @@ a{
     
 }
 
+#contact .contact-content form .form-group input[type="text"],
+#contact .contact-content form .form-group input[type="email"]{
+    display: block;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+#contact .contact-content form{
+    width: 500px;
+    margin-bottom: 30px;
+    margin: auto;
+}
+
+#contact .contact-content form .form-group textarea{
+    width: 80%;
+
+}
+
+#contact .contact-content form .form-group input[type="submit"]{
+    left: 160px;
+}
 
 }
 
@@ -1220,6 +1369,16 @@ a{
     .download{
         left: 30%;
     }
+
+    #contact .contact-content form{
+        width: 450px;
+        margin-bottom: 30px;
+        margin: auto;
+    }
+
+    #contact .contact-content form .form-group input[type="submit"]{
+        left: 120px;
+    }
 }
 
 @media only screen and (max-width: 460px){
@@ -1363,6 +1522,16 @@ a{
         width: 450px;
         margin: auto;
     }
+
+    #contact .contact-content form{
+        width: 400px;
+        margin-bottom: 30px;
+        margin: auto;
+    }
+
+    #contact .contact-content form .form-group input[type="submit"]{
+        left: 120px;
+    }
 }
 
 
@@ -1473,6 +1642,21 @@ a{
     #work .line{
         left: 38%;
     }
+
+    #contact .contact-content form{
+        width: 380px;
+        margin-bottom: 30px;
+        margin: auto;
+    }
+
+    #contact .contact-content form .form-group input[type="submit"]{
+        left: 120px;
+    }
+
+    #contact .contact-content #address{
+        width: 370px;
+        margin: auto;
+    }
 }
 
 @media only screen and (max-width: 360px) {
@@ -1567,6 +1751,25 @@ a{
         padding: 20px;
         margin-bottom: 30px;
     }
+
+    #contact .contact-content form{
+        width: 340px;
+        margin-bottom: 30px;
+        margin: auto;
+    }
+
+    #contact .contact-content form .form-group input[type="submit"]{
+        left: 80px;
+    }
+
+    #contact .contact-content #address{
+        width: 300px;
+        margin: auto;
+    }
+
+    #contact .contact-content #address p{
+        font-size: 13px;
+    }
 }
 
 @media only screen and (max-width: 320px){
@@ -1649,6 +1852,25 @@ a{
 @media only screen and (max-width: 320px){
     #work .line{
         left: 34%;
+    }
+
+    #contact .contact-content form{
+        width: 300px;
+        margin-bottom: 30px;
+        margin: auto;
+    }
+
+    #contact .contact-content form .form-group input[type="submit"]{
+        left: 80px;
+    }
+
+    #contact .contact-content #address{
+        width: 280px;
+        margin: auto;
+    }
+
+    #contact .contact-content #address p{
+        font-size: 10px;
     }
 }
 

@@ -28,6 +28,21 @@ a{
     color: #fff;
 }
 
+.red{
+    color: red;
+    padding-bottom:10px;
+}
+
+.date{
+    background-color: #20c997;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 10px;
+    display: inline;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
 .container1{
     max-width: 95vw;
     margin: auto;
@@ -248,6 +263,7 @@ a{
 #what_i_do{
     background-color: #f3f3f3;
     padding-top: 70px;
+    margin-bottom: 60px;
 }
 
 #what_i_do h1{
@@ -303,6 +319,64 @@ a{
 #what_i_do .do-content .do-left .b-1 .fa-mobile,
 #what_i_do .do-content .do-right .b-1 .fa-mobile{
     padding: 15px 24px;
+}
+
+/*resume*/
+#resume{
+    padding-top: 70px;
+}
+
+#resume h1{
+    text-align: center;
+}
+
+#resume .line{
+    left: 46.8%;
+}
+
+#resume .resume-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#resume .resume-content .res-tit{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+#resume .resume-content .flex .box{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+#resume .resume-content .flex .box p{
+    font-size: 14px;
+}
+
+#resume .resume-content .flex .box h2{
+    font-size: 18px;
+    padding: 15px 0px 10px 0px;
+}
+
+.download{
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 20px;
+    padding: 8px 10px;
+    position: relative;
+    left: 45%;
+    display: inline-block;
+    margin-top: 30px;
+    transition: all ease-in-out 0.5s;
+}
+
+.download:hover{
+    background-color: #333;
+    color: #fff;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -457,6 +531,22 @@ a{
         width: 100px;
         margin: auto
     }
+
+    #resume .res-tit{
+        text-align: center;
+    }
+
+    #resume .resume-content{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download{
+        left: 37%;
+    }
+    
 }
 
 @media only screen and (max-width: 590px) {
@@ -514,6 +604,10 @@ a{
         font-size: 16px;
         width: 300px;
     }
+
+    .download{
+        left: 30%;
+    }
 }
 
 @media only screen and (max-width: 450px){
@@ -523,6 +617,10 @@ a{
 
     #about .about-content .about-left p{
         text-align: justify;
+    }
+
+    .download{
+        left: 28%;
     }
 }
 
@@ -598,6 +696,10 @@ a{
         margin-bottom: 20px;
         position: relative;
         left: 10px;
+    }
+
+    .download{
+        left: 25%;
     }
 }
 

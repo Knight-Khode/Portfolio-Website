@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 html,body{
@@ -649,6 +650,15 @@ a{
 #contact .contact-content form .form-group input[type="submit"]:hover{
     background-color: #06ee4c;
     cursor:pointer;
+}
+
+/*Footer*/
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    font-size: 13px;
 }
 
 @media only screen and (max-width: 1200px) {

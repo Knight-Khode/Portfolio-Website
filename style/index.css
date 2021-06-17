@@ -244,6 +244,66 @@ a{
     margin-right: 50px;
 }
 
+/*What i do*/
+#what_i_do{
+    background-color: #f3f3f3;
+    padding-top: 70px;
+}
+
+#what_i_do h1{
+    text-align: center;
+}
+
+#what_i_do .line{
+    left: 46.7%;
+    margin-bottom: 90px;
+}
+
+#what_i_do .do-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#what_i_do .do-content .do-left,
+#what_i_do .do-content .do-right{
+    width: 500px;
+}
+
+#what_i_do .do-content .do-left .b-1,
+#what_i_do .do-content .do-right .b-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#what_i_do .do-content .do-left .b-1 h1,
+#what_i_do .do-content .do-right .b-1 h1{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#what_i_do .do-content .do-left .b-1 p,
+#what_i_do .do-content .do-right .b-1 p{
+    font-size: 16px;
+}
+
+#what_i_do .do-content .do-left .b-1 i,
+#what_i_do .do-content .do-right .b-1 i{
+    font-size: 40px;
+    margin-right: 20px;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 2px 2px 20px -2px rgba(0,0,0,0.25);
+    border-radius: 10px;
+    color: #09b883;
+}
+
+#what_i_do .do-content .do-left .b-1 .fa-mobile,
+#what_i_do .do-content .do-right .b-1 .fa-mobile{
+    padding: 15px 24px;
+}
 
 @media only screen and (max-width: 1200px) {
     #about .about-content .about-left {
@@ -256,6 +316,14 @@ a{
         width: 500px;
     }
 }  
+
+@media only screen and (max-width: 1050px) {
+    #what_i_do .do-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+} 
 
 @media only screen and (max-width: 1000px) {
     #about .about-content .about-left {
@@ -401,6 +469,31 @@ a{
     }
 }
 
+@media only screen and (max-width: 550px) {
+    #what_i_do .do-content .do-left .b-1 i,
+    #what_i_do .do-content .do-right .b-1 i{
+        font-size: 20px;
+        margin-right: 20px;
+        background-color: #fff;
+        padding: 15px;
+        box-shadow: 2px 2px 20px -2px rgba(0,0,0,0.25);
+        border-radius: 10px;
+        color: #09b883;
+    }
+
+    #what_i_do .do-content .do-left .b-1 h1,
+    #what_i_do .do-content .do-right .b-1 h1{
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    #what_i_do .do-content .do-left .b-1 p,
+    #what_i_do .do-content .do-right .b-1 p{
+        font-size: 16px;
+        width: 350px;
+    }
+}
+
 @media only screen and (max-width: 500px){
     #about .about-content .about-left {
         width: 380px;
@@ -415,6 +508,14 @@ a{
     }
 }
 
+@media only screen and (max-width: 480px){
+    #what_i_do .do-content .do-left .b-1 p,
+    #what_i_do .do-content .do-right .b-1 p{
+        font-size: 16px;
+        width: 300px;
+    }
+}
+
 @media only screen and (max-width: 450px){
     #about .about-content .about-left {
         width: 300px;
@@ -422,6 +523,30 @@ a{
 
     #about .about-content .about-left p{
         text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 410px){
+    #what_i_do .do-content .do-left .b-1 p,
+    #what_i_do .do-content .do-right .b-1 p{
+        font-size: 14px;
+        width: 280px;
+    }
+
+    #what_i_do .do-content .do-left .b-1 i, 
+    #what_i_do .do-content .do-right .b-1 i {
+        font-size: 15px;
+        margin-right: 20px;
+        background-color: #fff;
+        padding: 10px;
+        box-shadow: 2px 2px 20px -2px rgb(0 0 0 / 25%);
+        border-radius: 10px;
+        color: #09b883;
+    }
+
+    #what_i_do .do-content .do-left .b-1 .fa-mobile,
+    #what_i_do .do-content .do-right .b-1 .fa-mobile{
+        padding: 10px 15px;
     }
 }
 
@@ -450,6 +575,29 @@ a{
 
     #header .content2 p {
         font-size: 16px;
+    }
+
+    #what_i_do .do-content .do-left .b-1 p,
+    #what_i_do .do-content .do-right .b-1 p{
+        font-size: 14px;
+        width: 230px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    #what_i_do .do-content .do-left .b-1,
+    #what_i_do .do-content .do-right .b-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    #what_i_do .do-content i{
+        margin-bottom: 20px;
+        position: relative;
+        left: 10px;
     }
 }
 
